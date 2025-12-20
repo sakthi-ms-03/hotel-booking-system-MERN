@@ -1,0 +1,66 @@
+.adminLayout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f6f8;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.adminSidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #2c3e50, #34495e);
+  color: white;
+  padding: 25px 20px;
+}
+
+.adminLogo {
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.adminMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.adminMenu li {
+  margin-bottom: 14px;
+}
+
+.adminMenu a {
+  display: block;
+  padding: 10px 14px;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.adminMenu a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.adminMain {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.adminHeader {
+  background: white;
+  padding: 18px 25px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.adminHeader h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.adminContent {
+  padding: 30px;
+}

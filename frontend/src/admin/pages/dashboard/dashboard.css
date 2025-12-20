@@ -1,0 +1,46 @@
+.dashboard {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .dashboardTitle {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 8px;
+  }
+  
+  .dashboardSub {
+    color: #7f8c8d;
+    margin-bottom: 25px;
+  }
+  
+  .dashboardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+  
+  .dashboardCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+  
+  .dashboardCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+  }
+  

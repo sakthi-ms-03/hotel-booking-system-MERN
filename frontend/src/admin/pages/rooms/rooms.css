@@ -1,0 +1,70 @@
+.roomsPage {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .roomsTitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .roomCard {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+  }
+  
+  .roomCard:hover {
+    transform: translateY(-3px);
+  }
+  
+  .hotelName {
+    margin-bottom: 10px;
+    color: #34495e;
+  }
+  
+  .hotelName span {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .roomNumberCard {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 12px;
+    margin-left: 20px;
+    border-left: 4px solid #3498db;
+  }
+  
+  .available {
+    color: #27ae60;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+  
+  .reservationRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+  }
+  
+  .removeBtn {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .removeBtn:hover {
+    opacity: 0.9;
+  }
+  

@@ -1,0 +1,98 @@
+.pList {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin: 50px auto;
+  flex-wrap: wrap;
+  font-family: 'Poppins', sans-serif;
+}
+
+.pListItem {
+  flex: 1 1 200px; 
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.pListItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.pListImg {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.pListItem:hover .pListImg {
+  transform: scale(1.05);
+}
+
+.pListTitles {
+  padding: 15px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.pListTitles h1 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.pListTitles h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777;
+}
+
+.pList > :first-child {
+  font-size: 18px;
+  text-align: center;
+  width: 100%;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .pList {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .pListItem {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+  }
+
+  .pListImg {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pListItem {
+    flex: 1 1 100%;
+  }
+
+  .pListImg {
+    height: 120px;
+  }
+
+  .pListTitles h1 {
+    font-size: 16px;
+  }
+
+  .pListTitles h2 {
+    font-size: 13px;
+  }
+}

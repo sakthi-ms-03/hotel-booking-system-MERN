@@ -1,0 +1,152 @@
+.listContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+.listWrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.listSearch {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  height: fit-content;
+}
+
+.lsTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.lsItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.lsItem label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.lsItem input,
+.lsItem span {
+  padding: 8px 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.lsItem span {
+  background-color: #f7f7f7;
+}
+
+.lsOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.lsOptionItem {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100px;
+}
+
+.lsOptionText {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 3px;
+}
+
+.lsOptionText small {
+  font-size: 11px;
+  color: #888;
+}
+
+.lsOptionInput {
+  padding: 7px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.listSearch button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.listSearch button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(79, 172, 254, 0.4);
+}
+
+.listResult {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.listResult > :first-child {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .listWrapper {
+    flex-direction: column;
+  }
+
+  .listSearch,
+  .listResult {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .lsOptions {
+    flex-direction: column;
+  }
+
+  .lsOptionItem {
+    flex: 1 1 100%;
+  }
+
+  .lsItem input,
+  .lsItem span {
+    font-size: 13px;
+    padding: 6px 8px;
+  }
+
+  .listSearch button {
+    font-size: 14px;
+    padding: 9px;
+  }
+}

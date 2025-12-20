@@ -1,0 +1,220 @@
+.hotelContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hotelContainer .hotelTitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.hotelContainer .hotelAddress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  font-size: 16px;
+}
+
+.hotelContainer .hotelDistance {
+  font-size: 14px;
+  color: #008000;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.hotelContainer .hotelPriceHighlight {
+  font-size: 16px;
+  color: #ff5a5f;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.hotelContainer .hotelImages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.hotelContainer .hotelImgWrapper {
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hotelContainer .hotelImgWrapper:hover {
+  transform: scale(1.03);
+}
+
+.hotelContainer .hotelImg {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.hotelContainer .hotelDetails {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.hotelContainer .hotelDetailsTexts {
+  flex: 2;
+}
+
+.hotelContainer .hotelDetailsTexts .hotelTitle {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hotelContainer .hotelDetailsTexts .hotelDesc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.hotelContainer .hotelDetailsPrice {
+  flex: 1;
+  background-color: #f7f9fc;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.hotelContainer .hotelDetailsPrice h1 {
+  font-size: 20px;
+  color: #333;
+}
+
+.hotelContainer .hotelDetailsPrice span {
+  font-size: 14px;
+  color: #555;
+}
+
+.hotelContainer .hotelDetailsPrice h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4facfe;
+}
+
+.hotelContainer .hotelDetailsPrice button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hotelContainer .hotelDetailsPrice button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(79, 172, 254, 0.5);
+}
+
+.hotelContainer .slider {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotelContainer .sliderWrapper {
+  width: 80%;
+  max-width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotelContainer .sliderImg {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  max-height: 80vh;
+}
+
+.hotelContainer .slider .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: #ff5a5f;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.hotelContainer .slider .close:hover {
+  transform: rotate(90deg);
+}
+
+.hotelContainer .slider .arrow {
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.hotelContainer .slider .arrow:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 1024px) {
+  .hotelContainer .hotelDetails {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .hotelContainer .hotelImages {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .hotelContainer .hotelDetailsPrice {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hotelContainer .hotelDetailsPrice button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hotelContainer .hotelImg {
+    height: 120px;
+  }
+
+  .hotelContainer .hotelTitle {
+    font-size: 22px;
+  }
+
+  .hotelContainer .hotelDetailsTexts .hotelTitle {
+    font-size: 20px;
+  }
+
+  .hotelContainer .hotelDetailsPrice h2 {
+    font-size: 20px;
+  }
+}
